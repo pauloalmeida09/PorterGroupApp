@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using PorterGroupApp.Interfaces;
+using PorterGroupApp.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +29,10 @@ namespace PorterGroupApp
         {
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddSingleton<IConvertNumberRepository, ConvertNumberRepository>();
+            services.AddSingleton<ISumNumberRepository, SumNumberRepository>();
+            services.AddSingleton<IOperationMathResolveRepository, OperationMathResolveRepository>();
+            services.AddSingleton<IListObjectUnicRepository, ListObjectUnicRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
