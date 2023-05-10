@@ -17,7 +17,10 @@
 > que foram desenvolvidas para resolver as questões e com a interface do swagger já implementada com documentação dinâmica.
 >
 > Para a utilização na aplicação clone a mesma do repositorio com o "git clone {repositorio}".
+>
 > Em seguida abra a solução no visual studio e execute-a.
+>
 > Ao abrir a solução em seu navegador "http://localhos:{port}", digite "/swagger" para que a interface do swagger e assim possa efetuar as chamadas com as entradas especificas. Assim retornando os resultados como descrito nas questões.
+>
 > </p>
 >
